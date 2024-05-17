@@ -334,6 +334,8 @@ func (pp *PathParser) doParse(component, s string, p *Path) (*Path, error) {
 				switch b {
 				case "index":
 					p.pathType = TypeLeaf
+				case "text":
+					p.pathType = TypeLeaf
 				case "_index":
 					p.pathType = TypeBranch
 				default:
